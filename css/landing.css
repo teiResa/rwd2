@@ -7,9 +7,10 @@
   color:rgba(255, 255, 255, .1);
   background: linear-gradient(to right,     rgb(76, 217, 105), rgb(52, 170, 220),     rgb(88, 86, 217), rgb(255, 45, 83),       rgb(255, 45, 83), rgb(88, 86, 217),       rgb(52, 170, 220), rgb(76, 217, 105));
   background-size: 200%;
+  text-shadow:  4px 4px 0px #d5d5d5cc, 7px 7px 0px rgba(0, 0, 0, 0.2);
   -webkit-background-clip:text;
   font-weight:200;
-  font-size:500%;
+  font-size:600%;
   text-align: left;
 	top: 180px;
   animation:sTransition 10s linear infinite;
@@ -19,7 +20,7 @@
   0%{
     background-position:0%;
   }
-  
+
   100%{
     background-position:400%;
   }
@@ -38,7 +39,7 @@ body {
 }
 /* ============= Animation background ========= */
 .background {
-  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background: linear-gradient(232deg, #FC415A, #591BC5, #212335);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
@@ -55,8 +56,7 @@ body {
   left: 45vw;
   width: 1px;
   height: 1px;
-	background-image: url ('https://teiresa.github.io/images/teiResaHead.ico');
-	  
+
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   animation: cube 7s ease-in forwards infinite;
@@ -69,15 +69,22 @@ body {
   left: 45vw;
   width: 1px;
   height: 1px;
-	background-image: url ('https://teiresa.github.io/images/teiResaHead.ico');
-	  
+
+
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   animation: cube-reverse 8s ease-in forwards infinite;
 }
 .cube:nth-child(2n) {
   border-color: #FFF ;
-	
+
+}
+
+.cube-reverse:nth-child(2) {
+
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
 }
 .cube:nth-child(2) {
 
@@ -91,6 +98,11 @@ body {
   top: 50vh;
 }
 .cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube-reverse:nth-child(4) {
   animation-delay: 6s;
   left: 90vw;
   top: 10vh;
@@ -136,7 +148,7 @@ nav ul li a{
 }
 nav ul li:hover a{
   text-decoration: none;
-  color: #591BC5;;
+  color: #591BC5;
 }
 nav ul li:hover{
   height: 45px;
@@ -146,21 +158,7 @@ nav ul li:hover{
   text-decoration: none;
   transform: skew(15deg);
 }
-/* Logo */
-.logo{
-  width: 35px;
-  height: 35px;
-  margin: 40px 63px;
-  float: left;
-  transform: rotate(-30deg);
-}
-.logo span{
-  color: #591BC5;
-  font-size: 2em;
-  line-height: 1.4;
-  padding-left: 5px;
-  font-weight: bold;
-}
+
 /* Header content & title & button*/
 .header-content{
   margin-top:35%;
@@ -174,18 +172,19 @@ nav ul li:hover{
 }
 .header-content p {
   font-size: 20px;
+  color: #EFEEF5bb;
   line-height: 1.5;
   margin: 20px auto;
-	font-family: monospace;
+	font-family: arial, sans-serif, inherit;
 }
 .header-content button{
   width: 140px;
   margin:20px 10px;
   color: #591BC5;
   font-size: 17px;
-  border:1px solid #EFEEF5;
+  border:1px solid #EFEEF5bb;
   font-weight: 500;
-  background: #EFEEF5;
+  background: #EFEEF555;
   border-radius: 20px;
   padding: 10px;
   cursor:pointer;
@@ -227,6 +226,3 @@ nav ul li:hover{
     opacity: 0;
   }
 }
-
-
-

@@ -199,26 +199,44 @@ nav ul li:hover{
 }
 .header-content button{
   text-decoration: none;
+  color: #ffffff77;
   width: 140px;
-  margin:20px 10px;
-  color: #591BC5dd;
+  margin: 10px;
+
 
   font-size: 17px;
-  border:1px solid #EFEEF5bb;
+  border:0px solid #EFEEF5bb;
   font-weight: 500;
-  background: #EFEEF555;
+  background-color: #EFEEF544;
   border-radius: 5px;
   padding: 10px;
   cursor:pointer;
   transition: .3s;
+
 }
 .header-content a{
   text-decoration: none;
+  transition: .5;
+  font-size: 15px;
+  margin-left:9px;
+  color: white;
+
+
 }
 .header-content button:hover{
   border-radius: 20px;
   color: white;
   font-weight: normal;
+
+  height: 75px;
+
+  padding-top: 17px;
+  margin-top: -17px;
+  background-color: #EFEEF5aa;
+  border-radius: 20px;
+  transition: 20ms;
+  cursor: pointer;
+  color: white;
 }
 .header-content a:hover {
   color: white;

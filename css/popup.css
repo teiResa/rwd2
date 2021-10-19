@@ -1,10 +1,10 @@
 
 .popup-container h2{
-  color: grey;
+  color: #591BC566;
 }
 
 .popup-container p {
-  color: black;
+  color: #591BC5dd;
 }
 
 
@@ -12,11 +12,17 @@
   position: fixed;
   padding: 10px;
   max-width: 500px;
+  min-height: 200px;
   border-radius: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   background: rgba(255,255,255,.9);
+
+  /*PUT BLANKET DESIGN FADED AS BACKGROUND*/
+  background-image: url( );
+  background-size: ;
+
   visibility: hidden;
   opacity: 0;
   /* "delay" the visibility transition */

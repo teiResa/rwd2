@@ -52,15 +52,17 @@
   right: 5px;
   top: 5px;
   padding: 5px;
-  color: #000;
+  color: #80808077;
   transition: color .3s;
-  font-size: 2em;
+  font-size: 4em;
   line-height: .6em;
   font-weight: bold;
 }
 .popup .close:hover {
-  color: pink;
-  background-color: lightgrey;
+  color: #FF1493cc;
+  background-color: ;
+  transform: rotate(180deg);
+  transition: 340ms;
 }
 
 

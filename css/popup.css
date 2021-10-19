@@ -71,7 +71,7 @@
   cursor: default;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -10;
   right: 0;
   bottom: 0;
   opacity: 0;

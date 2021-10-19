@@ -1,3 +1,9 @@
+html {
+  overflow: hidden;
+  background-color: #591BC5;
+  z-index:-5;
+}
+
 #rainbow{
   position:absolute;
   font-family:'oddballz';
@@ -29,12 +35,19 @@
 body {
   font-family: sans-serif;
   box-sizing: border-box;
+
+  height: 100vh;
+  width: 100vw;
+  top: -2;
+  left: -1;
+  margin: 0;
+  padding: 0;
 }
 .container-fluid{
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
   background: #FFF;
 }
 /* ============= Animation background ========= */
@@ -185,6 +198,7 @@ nav ul li:hover{
 	font-family: arial, sans-serif, inherit;
 }
 .header-content button{
+  text-decoration: none;
   width: 140px;
   margin:20px 10px;
   color: #591BC5dd;
@@ -198,10 +212,16 @@ nav ul li:hover{
   cursor:pointer;
   transition: .3s;
 }
+.header-content a{
+  text-decoration: none;
+}
 .header-content button:hover{
   border-radius: 20px;
   color: white;
   font-weight: normal;
+}
+.header-content a:hover {
+  color: white;
 }
 /* Animate Background*/
 @keyframes Gradient {

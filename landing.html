@@ -1,6 +1,7 @@
 <head>
 
 <link rel="stylesheet" href="css/landing.css" />
+<link rel="stylesheet" href="css/popup.css" />
 <link rel="icon" href="assets/teiResaHead.ico" type="image/x-icon"/>
 
 <link href="https://fonts.googleapis.com/css2?family=Cute+Font&amp;family=Gaegu:wght@300;400&amp;family=Stylish&amp;display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
     </div>
 <!-- header -->
    <header>
-<!-- navbar -->
+<!-- navbar
      <nav>
         <ul>
 					  <li><a href="#">About</a></li>
@@ -32,13 +33,28 @@
             <li><a href="https://github.com/teiResa">Github</a></li>
          </ul>
        </nav>
+-->
 
 <!-- title & content -->
       <section class="header-content">
      <h1 id="rainbow">teiResa</h1>
         <p id="slogan"> We all have to start somewhere. </p>
-        <button>Know more</button>
-        <button>Meet us</button>
+
+        <button><a href="https://teiresa.github.io/">Personal Site</a></button>
+        <button>
+          <a href="#popup" class="button"> Portfolio & Resume </a>
+        </button>
+
+        <div class="popup-container">
+
+          <div id="popup" class="popup">
+            <a href="#" class="close">&times;</a>
+            <h2>The Popup Has Arrived</h2>
+            <p>This popup can be closed by clicking the fancy <b>×</b> in the top right corner or by clicking outside the popup box!</p>
+          </div>
+          <a href="#" class="close-popup"></a>
+      </div>
+
         <button ><a href="https://github.com/teiResa">Github</a></button>
       </section>
   </header>

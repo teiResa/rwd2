@@ -274,3 +274,68 @@ nav ul li:hover{
     opacity: 0;
   }
 }
+
+
+
+
+/* Portrait */
+@media screen
+  and (min-device-width: 280px)
+  and (min-device-height: 500px)
+  and (max-device-width: 580px)
+  and (max-device-height: 900px)
+  and (orientation: portrait) {
+
+
+    header {
+      min-height: 90vh;
+      top: 10vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      align-content: stretch;
+    }
+
+    .header-content {
+      flex-direction: column;
+
+      align-self: center;
+      align-content: center;
+
+    }
+
+    #slogan {
+      margin-top: 5vh;
+    }
+
+    .buttons {
+      order: 3;
+      display: flex;
+      flex-direction: column;
+
+      min-height: 50vh;
+      margin-top: 5vh;
+
+    }
+
+    .buttons button{
+      min-width: 300px;
+      margin-bottom: 5vh;
+    }
+}
+
+/* Landscape */
+@media screen
+  and (min-device-width: 500px)
+  and (min-device-height: 280px)
+  and (max-device-width: 1000px)
+  and (max-device-height: 580px)
+  and (orientation: landscape) {
+
+    header{
+      top: -15vh;
+    }
+
+
+}
